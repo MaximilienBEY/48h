@@ -1,0 +1,22 @@
+1.q: quel est l'operateur qui permet de savoir le type de la variable en js
+1.r: "typeof"
+2.q: 	quel sont les variable super global en php (3 rep min)
+2.r: "$GLOBALS, $_SERVER, $_GET, $_POST, $_FILES, $_COOKIE, $_SESSION, $_REQUEST, $_ENV" ou "$GLOBALS, $_​SERVER, $_​GET, $_​POST, $_​FILES, $_​REQUEST, $_​SESSION, $_​ENV, $_​COOKIE, $http_​response_​header, $argc, $argv, $php_​errormsg"
+3.q: re faire la class "Map()" sans utilisé le "new Map()" qui sera utilisé dans set exemple (https://interactive-examples.mdn.mozilla.net/pages/js/map.html)
+3.r: a voir
+4.q: re faire le prototype "trim()" sans utilisé "trim()", "trimEnd()" et "trimStart()'
+4.r: a voir
+5.q: quel est l'element dans html pour faire un formulaire
+5.r: "<form></form>"
+6.q:  comment rendre ca "body { color: red; }" en texte préformaté en html (demande un element)
+6.r: "<pre></pre>"
+7.q: que represente ":" dans ce script ":href="url"" en vuejs2
+7.r: "v-bind:"
+8.q: qeul sont les mothode http
+8.r: GET, HEAD, POST, PUT, DELETE, CONNECT, OPTIONS, TRACE, PATCH
+9.q: "La méthode ________ exige une représentation de la ressource désignée. 
+Les requêtes _______ doivent seulement servir à récupérer des données." 
+quel est la methode utilisé pour cette phrase ? 
+9.r: "get"
+10.q: faire une expresion regex qui permet de sortire les caractère "A-a" ou "B-b"
+10.r: doit sortire "AaBb" d'une phrase
