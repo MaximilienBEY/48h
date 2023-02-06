@@ -43,12 +43,22 @@ export const AlertProvider = (props: { children: React.ReactNode }) => {
       <Snackbar
         key={snackbarInfo ? snackbarInfo.key : undefined}
         open={open}
-        autoHideDuration={6000}
+        autoHideDuration={5000}
         onClose={handleClose}
         TransitionProps={{ onExited: handleExited }}
         disableWindowBlurListener
         message={snackbarInfo ? snackbarInfo.content : undefined}
         anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
+        sx={{
+          "& .MuiPaper-root": {
+            backgroundColor:
+              snackbarInfo?.type === "success"
+                ? "success.main"
+                : snackbarInfo?.type === "error"
+                ? "error.main"
+                : undefined,
+          },
+        }}
         action={
           <IconButton
             aria-label="close"

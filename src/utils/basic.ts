@@ -60,3 +60,21 @@ export const chunkArray = <T>(arr: T[], n: number): T[][] => {
 
   return arrays
 }
+
+export const getParams = (params: any[]) => {
+  return params
+    .map((param) => {
+      const type = Array.isArray(param)
+        ? "array"
+        : typeof param === "function"
+        ? "callback"
+        : typeof param
+      return type
+    })
+    .map((type, index, self) => {
+      const before = self
+        .slice(0, Math.max(index - 1, 0))
+        .filter((f) => f === type).length
+      return `${type}${before ? before + 1 : ""}`
+    })
+}

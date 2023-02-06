@@ -23,7 +23,7 @@ export const ThemeProvider = (props: { children: React.ReactNode }) => {
   const [type, setType] = useState(parseLocal("theme") ?? "system")
 
   const themeType = useMemo(
-    () => (type === "system" ? "light" ?? (prefersDarkMode ? "dark" : "light") : type),
+    () => (type === "system" ? "dark" ?? (prefersDarkMode ? "dark" : "light") : type),
     [prefersDarkMode, type],
   )
   const changeType = useCallback((type: ThemeType) => {

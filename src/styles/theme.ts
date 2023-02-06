@@ -14,7 +14,7 @@ export const getTheme = (mode: "dark" | "light") => {
     palette: {
       mode,
       primary: {
-        main: "#D81D27",
+        main: "#a29bfe",
       },
       success: {
         main: mode === "dark" ? "#B5EDB3" : "#27ae60",
