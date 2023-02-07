@@ -81,7 +81,9 @@ const QuizDeveloper = () => {
           description: "Quel sont les méthode http ?",
           choices: [
             { id: "crud", label: "GET, HEAD, POST, PUT, DELETE, CONNECT, OPTIONS, TRACE, PATCH", isCorrect: true },
-            { id: "error", label: "dd, dodo, toto, coco" },
+            { id: "error", label: "PING, SYNC, DISCONNECT, REFRESH, REBOOT, DOWNLOAD, UPLOAD, ABORT." },
+            { id: "error2", label: "LOGIN, LOGOUT, SAVE, RETRIEVE, QUERY, RESET, FETCH, SEND." },
+            { id: "error3", label: "REQUEST, RESPONSE, PUBLISH, SUBSCRIBE, NOTIFY, ACKNOWLEDGE, POLL, PUSH"}
           ],
         },
         {
