@@ -1,45 +1,20 @@
 import Quiz from "../../components/Quiz"
 
 const QuizIntra = () => {
-  return (
-    <Quiz
-      title="Infra"
-      questions={[
-        // {
-        //   title: "Les méthodes",
-        //   description: "Quelle méthode est utilisée pour récupérer des données en CRUD",
-        //   choices: [
-        //     { id: "get", label: "GET", isCorrect: true },
-        //     { id: "put", label: "PUT" },
-        //     { id: "post", label: "POST" },
-        //     { id: "delete", label: "DELETE" },
-        //   ],
-        // },
-        // {
-        //   title: "Les méthodes 2",
-        //   description: "Quelle méthode est utilisée pour récupérer des données en CRUD 2",
-        //   choices: [
-        //     { id: "get", label: "GET", isCorrect: true },
-        //     { id: "put", label: "PUT", isCorrect: true },
-        //     { id: "post", label: "POST" },
-        //     { id: "delete", label: "DELETE" },
-        //   ],
-        // },
-        {
-          title: "Map",
-          description:
-            "Récréer la fonction map en n'utilisant que des fonctions natives.",
-          tests: [
-            {
-              params: [["1", "2", "3"], (element: string) => `test-${element}`],
-              expected: ["test-1", "test-2", "test-3"],
-            },
-          ],
-          forbiddenFunctions: [],
-        },
-      ]}
-    />
-  )
+    return (
+        <Quiz
+            title="Infra"
+            questions={[
+                {
+                    title: "Challenge Infra",
+                    description: "Vous devez vous connectez sur une interface Web afin de récupérer un drapeau, vous avez à votre dispositions un switch avec des VLANs configurer, votre administrateur réseau n’étant pas très compétent, à vous de rajouter le VLAN permettant de vous connecter à ce serveur ou d’enlever un VLAN, vous pouvez utiliser le port qui est libre pour débranchez votre câble et initier la connexion avec le nouveau vlan une fois associer.\n" +
+                        "Authentification : ch48h ch48h" +
+                        "Quel est le drapeau (mot de passe) pour florence ?",
+                    answer : "462m6rYWq5YRmh",
+                }
+            ]}
+        />
+    )
 }
 
 export default QuizIntra
