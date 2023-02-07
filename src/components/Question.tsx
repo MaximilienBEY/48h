@@ -7,10 +7,12 @@ import {
   Typography,
   useTheme,
 } from "@mui/material"
+import deepEqual from "deep-equal"
 import { useCallback, useEffect, useMemo, useState } from "react"
 
+import { useAlert } from "../contexts/alert"
 import { QuestionInterface } from "../types/quiz.interface"
-import { getParams } from "../utils/basic"
+import { getParams, shuffleArray } from "../utils/basic"
 import Editor from "./Editor"
 
 interface QuestionProps {
@@ -19,10 +21,12 @@ interface QuestionProps {
 }
 const Question = ({ question: pQuestion, onSubmit }: QuestionProps) => {
   const theme = useTheme()
+  const addAlert = useAlert()
 
   const [open, setOpen] = useState(false)
   const [question, setQuestion] = useState<QuestionInterface | null>(null)
 
+  const [tries, setTries] = useState(0)
   const [answer, setAnswer] = useState("")
   const [answers, setAnswers] = useState<string[]>([])
 
@@ -48,6 +52,10 @@ const Question = ({ question: pQuestion, onSubmit }: QuestionProps) => {
 
     return true
   }, [answer.length, answers.length, question, type])
+  const choices = useMemo(
+    () => (question?.choices ? shuffleArray(question.choices) : null),
+    [question?.choices],
+  )
 
   const resetValues = useCallback((question: QuestionInterface) => {
     setQuestion(question)
@@ -103,12 +111,28 @@ const main = (${params.join(", ")}) => {
             expected,
           }
         })
-        console.log(results)
+        console.log("Results", results)
+
+        const wrongAnswer = results.find((r) => !deepEqual(r.result, r.expected))
+        if (tries >= 4 || !wrongAnswer) {
+          onSubmit(!wrongAnswer)
+          setTries(0)
+        } else {
+          setTries((prev) => prev + 1)
+          addAlert("Un test a échoué, regardez la console pour voir le détail.")
+        }
       } catch (error) {
-        console.log(error)
+        if (tries >= 4) {
+          onSubmit(false)
+          setTries(0)
+        } else {
+          setTries((prev) => prev + 1)
+          addAlert("Un test a échoué, regardez la console pour voir le détail.")
+          console.log(error)
+        }
       }
     }
-  }, [answer, answers, disabled, onSubmit, question, type])
+  }, [addAlert, answer, answers, disabled, onSubmit, question, tries, type])
 
   useEffect(() => {
     if (question?.title === pQuestion?.title) return
@@ -178,7 +202,7 @@ const main = (${params.join(", ")}) => {
                   rowGap: 1,
                 }}
               >
-                {question.choices!.map((choice) => (
+                {choices!.map((choice) => (
                   <Button
                     key={choice.id}
                     onClick={() => multipleSelect(choice.id)}
@@ -222,7 +246,7 @@ const main = (${params.join(", ")}) => {
               disabled={disabled}
               onClick={handleSubmit}
             >
-              Valider
+              Valider{type === "code" ? ` ${5 - tries}/5` : ""}
             </Button>
           </Box>
         </>
