@@ -204,6 +204,28 @@ const QuizCyber = () => {
             "Saississez le nom de la technique qui combine l'utilisation de chiffrement symétrique et d'un chiffrement asymétrique",
           answer: "hybride",
         },
+        {
+          title: "Cyber 10",
+          description:
+            "Quel est la recommendation par l’ANSSI pour un bon mot de passe ?",
+          choices: [
+            {
+              id: "8caracteres",
+              label:
+                "8 Caractères comprenant majuscules minuscules , chiffres, caractères spéciaux",
+            },
+            {
+              id: "12caracteres",
+              label:
+                "12 Caractères comprenant majuscules minuscules, chiffres, caractères spéciaux",
+            },
+            {
+              id: "10caracteres",
+              label:
+                "10 Caractères comprenant majuscules minuscules, chiffres, caractères spéciaux",
+            },
+          ],
+        },
       ]}
     />
   )
