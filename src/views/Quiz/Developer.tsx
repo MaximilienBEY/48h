@@ -37,7 +37,7 @@ const QuizDeveloper = () => {
         },
         {
           title: "'Super Globla'",
-          description: "Quel sont les variable 'Super Global' en php ?",
+          description: "Quels sont les variables 'Super Global' en php ?",
           choices: [
             { id: "get", label: "$_GET", isCorrect: true },
             { id: "admin", label: "$_ADMIN" },
@@ -78,7 +78,7 @@ const QuizDeveloper = () => {
         },
         {
           title: "Methode Http",
-          description: "Quel sont les méthode http ?",
+          description: "Quelles sont les méthodes http ?",
           choices: [
             { id: "crud", label: "GET, HEAD, POST, PUT, DELETE, CONNECT, OPTIONS, TRACE, PATCH", isCorrect: true },
             { id: "error", label: "PING, SYNC, DISCONNECT, REFRESH, REBOOT, DOWNLOAD, UPLOAD, ABORT." },
@@ -87,7 +87,7 @@ const QuizDeveloper = () => {
           ],
         },
         {
-          title: "Quel est la méthode utilisée pour cette phrase ?",
+          title: "Quelle est la méthode utilisée pour cette phrase ?",
           description: "La méthode ________ exige une représentation de la ressource désignée. \nLes requêtes _______ doivent seulement servir à récupérer des données.",
           choices: [
             { id: "get", label: "GET", isCorrect: true },
