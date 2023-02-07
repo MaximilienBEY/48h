@@ -109,6 +109,15 @@ const QuizCyber = () => {
             "Saississez le nom de la technique qui combine l’utilisation de chiffrement symétrique et d’un chiffrement asymétrique",
           answer: "hybride",
         },
+          description:
+            "Lequel des programmes malveillants suivants ne se réplique pas automatiquement?",
+          choices: [
+            { id: "porte", label: "Porte dérobée" },
+            { id: "virus", label: "Virus" },
+            { id: "ver", label: "Ver", isCorrect: true },
+            { id: "zombie", label: "Zombie" },
+          ],
+        },
       ]}
     />
   )
