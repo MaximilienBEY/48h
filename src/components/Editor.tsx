@@ -6,11 +6,13 @@ import ReactCodeMirror from "@uiw/react-codemirror"
 interface Props {
   value: string
   onChange: (value: string) => void
+  readOnly?: boolean
 }
-const Editor = ({ value, onChange }: Props) => {
+const Editor = ({ value, onChange, readOnly }: Props) => {
   return (
     <Box sx={{ position: "relative", "& .cm-theme, & .cm-editor": { height: "100%" } }}>
       <ReactCodeMirror
+        readOnly={readOnly}
         value={value}
         onChange={onChange}
         theme={tokyoNightInit({ theme: "dark" })}

@@ -11,13 +11,15 @@ export type QuestionInterface = {
       answer: string
       choices?: undefined
       tests?: undefined
-      forbiddenFunctions?: undefined
+      forbiddenTerms?: undefined
+      response?: undefined
     }
   | {
       answer?: undefined
       choices: ChoiceInterface[]
       tests?: undefined
-      forbiddenFunctions?: undefined
+      forbiddenTerms?: undefined
+      response?: undefined
     }
   | {
       answer?: undefined
@@ -26,6 +28,7 @@ export type QuestionInterface = {
         params: any[]
         expected: any
       }[]
-      forbiddenFunctions: string[]
+      forbiddenTerms: RegExp[]
+      response: string
     }
 )
