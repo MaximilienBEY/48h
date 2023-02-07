@@ -204,6 +204,35 @@ const QuizCyber = () => {
             "Saississez le nom de la technique qui combine l'utilisation de chiffrement symétrique et d'un chiffrement asymétrique",
           answer: "hybride",
         },
+        {
+          title: "Cyber 16",
+          description: "Quelle est la définition de la cybersécurité ?",
+          choices: [
+            {
+              id: "protectionnetwork",
+              label:
+                "La protection des réseaux de communication de toutes sortes de menaces en ligne",
+              isCorrect: true,
+            },
+            {
+              id: "protectioncomputer",
+              label: "La protection des ordinateurs de toutes sortes de menaces en ligne",
+              isCorrect: true,
+            },
+            {
+              id: "protectiondevice",
+              label:
+                "La protection des appareils électroniques de toutes sortes de menaces en ligne",
+              isCorrect: true,
+            },
+            {
+              id: "protectiondata",
+              label:
+                "La protection des données et des systèmes informatiques contre les attaques, les abus et les accidents",
+              isCorrect: true,
+            },
+          ],
+        },
       ]}
     />
   )
