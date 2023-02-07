@@ -131,8 +131,50 @@ const QuizCyber = () => {
             },
           ],
         },
-<<<<<<< Updated upstream
-=======
+        {
+          title: "Cyber 11",
+          description: "Choisir la ou les phrases correctes",
+          choices: [
+            {
+              id: "chiffre",
+              label:
+                "Le chiffrement permet de garantir que la donnée sera toujours disponible/accessible",
+            },
+            {
+              id: "secu",
+              label:
+                "La sécurité physique permet d'assurer la disponibilité des équipements et des données",
+              isCorrect: true,
+            },
+            {
+              id: "signature",
+              label:
+                "La signature électronique permet de garantir la confidentialité de la donnée",
+              isCorrect: true,
+            },
+            {
+              id: "denis",
+              label:
+                "Les dénis de service distribués (DDoS) portent atteinte à la disponibilité des données",
+            },
+          ],
+        },
+        {
+          title: "Cyber 12",
+          description: "A quoi peut-on associer le terme 'WannaCry'?",
+          choices: [
+            { id: "ransomware", label: "Un ransomware", isCorrect: true },
+            { id: "spyware", label: "Un spyware" },
+            { id: "antivirus", label: "Un antivirus" },
+            { id: "reseau", label: "Un réseau social" },
+          ],
+        },
+        {
+          title: "Cyber 13",
+          description:
+            "Saississez le nom de la technique qui combine l'utilisation de chiffrement symétrique et d'un chiffrement asymétrique",
+          answer: "hybride",
+        },
         {
           title: "Cyber 14",
           description: "A quoi peut-on associer le terme 'WannaCry'?",
@@ -174,7 +216,6 @@ const QuizCyber = () => {
             },
           ],
         },
->>>>>>> Stashed changes
       ]}
     />
   )
