@@ -1,4 +1,4 @@
-import { Box, Button, LinearProgress, Typography, useTheme } from "@mui/material"
+import { Box, LinearProgress, Typography, useTheme } from "@mui/material"
 import { useCallback, useMemo, useState } from "react"
 
 import { useAlert } from "../contexts/alert"

@@ -1,9 +1,9 @@
 import Quiz from "../../components/Quiz"
 
-const QuizDeveloper = () => {
+const QuizIntra = () => {
   return (
     <Quiz
-      title="Développeur"
+      title="Infra"
       questions={[
         // {
         //   title: "Les méthodes",
@@ -42,4 +42,4 @@ const QuizDeveloper = () => {
   )
 }
 
-export default QuizDeveloper
+export default QuizIntra

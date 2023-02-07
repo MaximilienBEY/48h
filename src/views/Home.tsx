@@ -19,7 +19,7 @@ const Home = () => {
           Quizathon
         </Typography>
         <Box sx={{ display: "flex", justifyContent: "center", columnGap: 2 }}>
-          <Button onClick={() => navigate("/quiz/intra")}>Intra</Button>
+          <Button onClick={() => navigate("/quiz/infra")}>Infra</Button>
           <Button onClick={() => navigate("/quiz/developer")}>Développeur</Button>
           <Button onClick={() => navigate("/quiz/cyber")}>Cyber</Button>
         </Box>
