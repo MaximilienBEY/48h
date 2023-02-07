@@ -18,7 +18,7 @@ const QuizCyber = () => {
         {
           title: "Cyber 2",
           description:
-            "Quel outil cryptographique utilise-t-on pour s’assurer que la bi clé utilisée pour signer un document appartient bien a notre correspondant ?",
+            "Quel outil cryptographique utilise-t-on pour s'assurer que la bi clé utilisée pour signer un document appartient bien a notre correspondant ?",
           choices: [
             { id: "chiffrement", label: "Chiffrement asymétrique" },
             { id: "signature", label: "La signature numérique" },
@@ -92,13 +92,13 @@ const QuizCyber = () => {
         {
           title: "Cyber 8",
           description:
-            "Quels problème la signature numérique et les certificats électroniques permettent t’ils de resoudres ?",
+            "Quels problème la signature numérique et les certificats électroniques permettent t'ils de resoudres ?",
           choices: [
             { id: "cle", label: "La distribution des clés" },
             { id: "confidentialite", label: "La confidentialité des données" },
             {
               id: "integrite",
-              label: "L’intégrité d'une donnée et la preuve de provenance",
+              label: "L'intégrité d'une donnée et la preuve de provenance",
               isCorrect: true,
             },
           ],
@@ -106,7 +106,7 @@ const QuizCyber = () => {
         {
           title: "Cyber 9",
           description:
-            "Saississez le nom de la technique qui combine l’utilisation de chiffrement symétrique et d’un chiffrement asymétrique",
+            "Saississez le nom de la technique qui combine l'utilisation de chiffrement symétrique et d'un chiffrement asymétrique",
           answer: "hybride",
         },
       ]}
