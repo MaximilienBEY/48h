@@ -80,8 +80,18 @@ const QuizCyber = () => {
         },
         {
           title: "Cyber 7",
+          description: "Qu'est ce que Shodan.io ?",
+          choices: [
+            { id: "collecte", label: "Un service de collecte des données géré par la NSA" },
+            { id: "surveillance", label: "Un service de surveillance numérique géré par la GRC" },
+            { id: "espionnage", label: "Un service d'espionage numérique utilisé par le FBI" },
+            { id: "moteur", label: "Un moteur de recherche permettant d'identifier les objets connectés non protégés", isCorrect: true },
+          ],
+        },
+        {
+          title: "Cyber 8",
           description:
-            "Le chiffrement et le déchiffrement des données est ma responsabilité de quelle couche ?",
+            "Le chiffrement et le déchiffrement des données est la responsabilité de quelle couche ?",
           choices: [
             { id: "session", label: "Couche de session" },
             { id: "transport", label: "Couche de transport" },
@@ -90,9 +100,31 @@ const QuizCyber = () => {
           ],
         },
         {
-          title: "Cyber 8",
+          title: "Cyber 9",
           description:
-            "Quels problème la signature numérique et les certificats électroniques permettent t’ils de resoudres ?",
+            "Le _______ est un code qui reconnaît une séquence d’entrée spéciale ou qui est déclenché par une séquence d’événements improbable.",
+          choices: [
+            { id: "piège", label: "Porte à piège" },
+            { id: "cheval", label: "Cheval de Troie", isCorrect: true },
+            { id: "bombe", label: "Bombe logique" },
+            { id: "virus", label: "Virus" },
+          ]
+        },
+        {
+          title: "Cyber 10",
+          description:
+            "Lequel des programmes malveillants suivants ne se réplique pas automatiquement?",
+          choices: [
+            { id: "porte", label: "Porte dérobée" },
+            { id: "virus", label: "Virus" },
+            { id: "ver", label: "Ver", isCorrect: true },
+            { id: "zombie", label: "Zombie" },
+          ]
+        },
+        {
+          title: "Cyber 11",
+          description:
+            "Quels problèmes la signature numérique et les certificats électroniques permettent t’ils de resoudre ?",
           choices: [
             { id: "cle", label: "La distribution des clés" },
             { id: "confidentialite", label: "La confidentialité des données" },
@@ -104,7 +136,40 @@ const QuizCyber = () => {
           ],
         },
         {
-          title: "Cyber 9",
+          title: "Cyber 12",
+          description:
+            "Quel type d'attaque nécessite un attaquant pour renifler un réseau (sniffing) ?",
+          choices: [
+            { id: "man", label: "Man-in-the-Middle", isCorrect: true },
+            { id: "mac", label: "MAC Flooding" },
+            { id: "ddos", label: "DDos" },
+            { id: "zero", label: "Zero Day Exploit" },
+          ]
+        },
+        {
+          title: "Cyber 13",
+          description:
+            "Choisir la ou les phrases correctes",
+          choices: [
+            { id: "chiffre", label: "Le chiffrement permet de garantir que la donnée sera toujours disponible/accessible" },
+            { id: "secu", label: "La sécurité physique permet d’assurer la disponibilité des équipements et des données", isCorrect: true },
+            { id: "signature", label: "La signature électronique permet de garantir la confidentialité de la donnée", isCorrect: true },
+            { id: "denis", label: "Les dénis de service distribués (DDoS) portent atteinte à la disponibilité des données" },
+          ]
+        },
+        {
+          title: "Cyber 14",
+          description:
+            "A quoi peut-on associer le terme "WannaCry"?",
+          choices: [
+            { id: "ransomware", label: "Un ransomware", isCorrect: true },
+            { id: "spyware", label: "Un spyware" },
+            { id: "antivirus", label: "Un antivirus" },
+            { id: "reseau", label: "Un réseau social" },
+          ]
+        },
+        {
+          title: "Cyber 15",
           description:
             "Saississez le nom de la technique qui combine l’utilisation de chiffrement symétrique et d’un chiffrement asymétrique",
           answer: "hybride",
