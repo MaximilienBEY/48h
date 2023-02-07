@@ -53,7 +53,7 @@ const QuizCyber = () => {
             {
               id: "identifie",
               label:
-                "Une personne qui identifie les failles des systèmes de sécurité pour percer dans dans des systèmes informatiques a des fins malveillante.",
+                "Une personne qui identifie les failles des systèmes de sécurité pour percer dans des systèmes informatiques à des fins malveillante.",
               isCorrect: true,
             },
             {
