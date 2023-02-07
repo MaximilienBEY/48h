@@ -109,6 +109,8 @@ const QuizCyber = () => {
             "Saississez le nom de la technique qui combine l’utilisation de chiffrement symétrique et d’un chiffrement asymétrique",
           answer: "hybride",
         },
+        {
+          title: "Cyber 10",
           description:
             "Lequel des programmes malveillants suivants ne se réplique pas automatiquement?",
           choices: [
@@ -116,6 +118,101 @@ const QuizCyber = () => {
             { id: "virus", label: "Virus" },
             { id: "ver", label: "Ver", isCorrect: true },
             { id: "zombie", label: "Zombie" },
+          ],
+        },
+        {
+          title: "Cyber 11",
+          description:
+            "Quels problème la signature numérique et les certificats électroniques permettent t’ils de resoudres ?",
+          choices: [
+            { id: "cle", label: "La distribution des clés" },
+            { id: "confidentialite", label: "La confidentialité des données" },
+            {
+              id: "integrite",
+              label: "L'intégrité d'une donnée et la preuve de provenance",
+              isCorrect: true,
+            },
+          ],
+        },
+        {
+          title: "Cyber 12",
+          description:
+            "Quel type d'attaque nécessite un attaquant pour renifler un réseau (sniffing) ?",
+          choices: [
+            { id: "man", label: "Man-in-the-Middle", isCorrect: true },
+            { id: "mac", label: "MAC Flooding" },
+            { id: "ddos", label: "DDos" },
+            { id: "zero", label: "Zero Day Exploit" },
+          ],
+        },
+        {
+          title: "Cyber 13",
+          description: "Choisir la ou les phrases correctes",
+          choices: [
+            {
+              id: "chiffre",
+              label:
+                "Le chiffrement permet de garantir que la donnée sera toujours disponible/accessible",
+            },
+            {
+              id: "secu",
+              label:
+                "La sécurité physique permet d'assurer la disponibilité des équipements et des données",
+              isCorrect: true,
+            },
+            {
+              id: "signature",
+              label:
+                "La signature électronique permet de garantir la confidentialité de la donnée",
+              isCorrect: true,
+            },
+            {
+              id: "denis",
+              label:
+                "Les dénis de service distribués (DDoS) portent atteinte à la disponibilité des données",
+            },
+          ],
+        },
+        {
+          title: "Cyber 14",
+          description: "A quoi peut-on associer le terme 'WannaCry'?",
+          choices: [
+            { id: "ransomware", label: "Un ransomware", isCorrect: true },
+            { id: "spyware", label: "Un spyware" },
+            { id: "antivirus", label: "Un antivirus" },
+            { id: "reseau", label: "Un réseau social" },
+          ],
+        },
+        {
+          title: "Cyber 15",
+          description:
+            "Saississez le nom de la technique qui combine l'utilisation de chiffrement symétrique et d'un chiffrement asymétrique",
+          answer: "hybride",
+        },
+        {
+          title: "Cyber 16",
+          description: "Quelle est la définition de la cybersécurité ?",
+          choices: [
+            {
+              id: "protectionnetwork",
+              label:
+                "La protection des réseaux de communication de toutes sortes de menaces en ligne",
+            },
+            {
+              id: "protectioncomputer",
+              label: "La protection des ordinateurs de toutes sortes de menaces en ligne",
+            },
+            {
+              id: "protectiondevice",
+              label:
+                "La protection des appareils électroniques de toutes sortes de menaces en ligne",
+            },
+            {
+              id: "protectiondata",
+              label:
+                "La protection des données et des systèmes informatiques contre les attaques, les abus et les accidents",
+              isCorrect: true,
+            },
           ],
         },
       ]}
