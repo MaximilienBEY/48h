@@ -131,6 +131,50 @@ const QuizCyber = () => {
             },
           ],
         },
+<<<<<<< Updated upstream
+=======
+        {
+          title: "Cyber 14",
+          description: "A quoi peut-on associer le terme 'WannaCry'?",
+          choices: [
+            { id: "ransomware", label: "Un ransomware", isCorrect: true },
+            { id: "spyware", label: "Un spyware" },
+            { id: "antivirus", label: "Un antivirus" },
+            { id: "reseau", label: "Un réseau social" },
+          ],
+        },
+        {
+          title: "Cyber 15",
+          description:
+            "Saississez le nom de la technique qui combine l'utilisation de chiffrement symétrique et d'un chiffrement asymétrique",
+          answer: "hybride",
+        },
+        {
+          title: "Cyber 16",
+          description: "Quelle est la définition de la cybersécurité ?",
+          choices: [
+            {
+              id: "protectionnetwork",
+              label:
+                "La protection des réseaux de communication de toutes sortes de menaces en ligne",
+            },
+            {
+              id: "protectioncomputer",
+              label: "La protection des ordinateurs de toutes sortes de menaces en ligne",
+            },
+            {
+              id: "protectiondevice",
+              label:
+                "La protection des appareils électroniques de toutes sortes de menaces en ligne",
+            },
+            {
+              id: "protectiondata",
+              label:
+                "La protection des données et des systèmes informatiques contre les attaques, les abus et les accidents",
+            },
+          ],
+        },
+>>>>>>> Stashed changes
       ]}
     />
   )
