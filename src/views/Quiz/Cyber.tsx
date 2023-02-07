@@ -6,7 +6,7 @@ const QuizCyber = () => {
       title="Cyber sécurité"
       questions={[
         {
-          title: "Cyber 1",
+          title: "Question 1",
           description:
             "Quel terme est utilisé pour décrire une action visant a retrouver un message en clair sans posséder la clé de déchiffrement ?",
           choices: [
@@ -16,7 +16,7 @@ const QuizCyber = () => {
           ],
         },
         {
-          title: "Cyber 2",
+          title: "Question 2",
           description:
             "Quel outil cryptographique utilise-t-on pour s'assurer que la bi clé utilisée pour signer un document appartient bien a notre correspondant ?",
           choices: [
@@ -26,7 +26,7 @@ const QuizCyber = () => {
           ],
         },
         {
-          title: "Cyber 3",
+          title: "Question 3",
           description: "Le protocole utilisé pour sécuriser les échanges d'e-mails est :",
           choices: [
             { id: "stmp", label: "STMP" },
@@ -36,7 +36,7 @@ const QuizCyber = () => {
           ],
         },
         {
-          title: "Cyber 4",
+          title: "Question 4",
           description:
             "Lequel des termes suivants est spécifiquement conçu pour leurrer et attirer les pirates ?",
           choices: [
@@ -47,7 +47,7 @@ const QuizCyber = () => {
           ],
         },
         {
-          title: "Cyber 5",
+          title: "Question 5",
           description: "Qu'est-ce qu'un hacker ?",
           choices: [
             {
@@ -69,7 +69,7 @@ const QuizCyber = () => {
           ],
         },
         {
-          title: "Cyber 6",
+          title: "Question 6",
           description: "L'art de casser des chiffres est connu comme :",
           choices: [
             { id: "cryptographie", label: "Cryptographie" },
@@ -79,7 +79,7 @@ const QuizCyber = () => {
           ],
         },
         {
-          title: "Cyber 7",
+          title: "Question 7",
           description: "Qu'est ce que Shodan.io ?",
           choices: [
             {
@@ -103,7 +103,7 @@ const QuizCyber = () => {
           ],
         },
         {
-          title: "Cyber 8",
+          title: "Question 8",
           description:
             "Le chiffrement et le déchiffrement des données est la responsabilité de quelle couche ?",
           choices: [
@@ -114,7 +114,7 @@ const QuizCyber = () => {
           ],
         },
         {
-          title: "Cyber 9",
+          title: "Question 9",
           description:
             "Le _______ est un code qui reconnaît une séquence d'entrée spéciale ou qui est déclenché par une séquence d'événements improbable.",
           choices: [
@@ -125,7 +125,7 @@ const QuizCyber = () => {
           ],
         },
         {
-          title: "Cyber 10",
+          title: "Question 10",
           description:
             "Lequel des programmes malveillants suivants ne se réplique pas automatiquement?",
           choices: [
@@ -136,7 +136,7 @@ const QuizCyber = () => {
           ],
         },
         {
-          title: "Cyber 11",
+          title: "Question 11",
           description:
             "Quels problème la signature numérique et les certificats électroniques permettent t’ils de resoudres ?",
           choices: [
@@ -150,7 +150,7 @@ const QuizCyber = () => {
           ],
         },
         {
-          title: "Cyber 12",
+          title: "Question 12",
           description:
             "Quel type d'attaque nécessite un attaquant pour renifler un réseau (sniffing) ?",
           choices: [
@@ -161,7 +161,7 @@ const QuizCyber = () => {
           ],
         },
         {
-          title: "Cyber 13",
+          title: "Question 13",
           description: "Choisir la ou les phrases correctes",
           choices: [
             {
@@ -189,7 +189,7 @@ const QuizCyber = () => {
           ],
         },
         {
-          title: "Cyber 14",
+          title: "Question 14",
           description: "A quoi peut-on associer le terme 'WannaCry'?",
           choices: [
             { id: "ransomware", label: "Un ransomware", isCorrect: true },
@@ -199,93 +199,13 @@ const QuizCyber = () => {
           ],
         },
         {
-          title: "Cyber 15",
+          title: "Question 15",
           description:
             "Saississez le nom de la technique qui combine l'utilisation de chiffrement symétrique et d'un chiffrement asymétrique",
           answer: "hybride",
         },
         {
-          title: "Cyber 10",
-          description:
-            "Lequel des programmes malveillants suivants ne se réplique pas automatiquement?",
-          choices: [
-            { id: "porte", label: "Porte dérobée" },
-            { id: "virus", label: "Virus" },
-            { id: "ver", label: "Ver", isCorrect: true },
-            { id: "zombie", label: "Zombie" },
-          ],
-        },
-        {
-          title: "Cyber 11",
-          description:
-            "Quels problème la signature numérique et les certificats électroniques permettent t’ils de resoudres ?",
-          choices: [
-            { id: "cle", label: "La distribution des clés" },
-            { id: "confidentialite", label: "La confidentialité des données" },
-            {
-              id: "integrite",
-              label: "L'intégrité d'une donnée et la preuve de provenance",
-              isCorrect: true,
-            },
-          ],
-        },
-        {
-          title: "Cyber 12",
-          description:
-            "Quel type d'attaque nécessite un attaquant pour renifler un réseau (sniffing) ?",
-          choices: [
-            { id: "man", label: "Man-in-the-Middle", isCorrect: true },
-            { id: "mac", label: "MAC Flooding" },
-            { id: "ddos", label: "DDos" },
-            { id: "zero", label: "Zero Day Exploit" },
-          ],
-        },
-        {
-          title: "Cyber 13",
-          description: "Choisir la ou les phrases correctes",
-          choices: [
-            {
-              id: "chiffre",
-              label:
-                "Le chiffrement permet de garantir que la donnée sera toujours disponible/accessible",
-            },
-            {
-              id: "secu",
-              label:
-                "La sécurité physique permet d'assurer la disponibilité des équipements et des données",
-              isCorrect: true,
-            },
-            {
-              id: "signature",
-              label:
-                "La signature électronique permet de garantir la confidentialité de la donnée",
-              isCorrect: true,
-            },
-            {
-              id: "denis",
-              label:
-                "Les dénis de service distribués (DDoS) portent atteinte à la disponibilité des données",
-            },
-          ],
-        },
-        {
-          title: "Cyber 14",
-          description: "A quoi peut-on associer le terme 'WannaCry'?",
-          choices: [
-            { id: "ransomware", label: "Un ransomware", isCorrect: true },
-            { id: "spyware", label: "Un spyware" },
-            { id: "antivirus", label: "Un antivirus" },
-            { id: "reseau", label: "Un réseau social" },
-          ],
-        },
-        {
-          title: "Cyber 15",
-          description:
-            "Saississez le nom de la technique qui combine l'utilisation de chiffrement symétrique et d'un chiffrement asymétrique",
-          answer: "hybride",
-        },
-        {
-          title: "Cyber 16",
+          title: "Question 16",
           description: "Quelle est la définition de la cybersécurité ?",
           choices: [
             {
