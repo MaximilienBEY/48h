@@ -96,9 +96,12 @@ const main = (${params.join(", ")}) => {
         answers.length === correct?.length && answers.every((a) => correct?.includes(a)),
       )
     } else if (type === "input") {
-      onSubmit(answer.toLowerCase() === question.answer!.toLowerCase())
+      onSubmit(answer.trim().toLowerCase() === question.answer!.trim().toLowerCase())
     } else if (type === "code") {
       const content = answer.split("\n").slice(1, -1).join("\n").trim()
+      if (question.forbiddenTerms?.find((f) => content.match(f)))
+        return addAlert("Vous avez utilisé un terme interdit dans votre code.")
+
       const defaultParams = question.tests!.at(0)?.params ?? []
       const params = getParams(defaultParams)
 

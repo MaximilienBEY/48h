@@ -138,7 +138,7 @@ const QuizCyber = () => {
         {
           title: "Cyber 11",
           description:
-            "Quels problèmes la signature numérique et les certificats électroniques permettent t'ils de resoudre ?",
+            "Quels problème la signature numérique et les certificats électroniques permettent t’ils de resoudres ?",
           choices: [
             { id: "cle", label: "La distribution des clés" },
             { id: "confidentialite", label: "La confidentialité des données" },

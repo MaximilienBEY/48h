@@ -66,6 +66,9 @@ const Quiz = ({ title, questions: pQuestions }: QuizProps) => {
         width: 1000,
         maxWidth: "50vw",
         margin: "0 auto",
+        [theme.breakpoints.down("xl")]: { maxWidth: "60vw" },
+        [theme.breakpoints.down("lg")]: { maxWidth: "70vw" },
+        [theme.breakpoints.down("md")]: { maxWidth: "80vw" },
       }}
     >
       <Box
